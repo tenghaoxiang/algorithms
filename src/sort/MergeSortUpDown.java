@@ -21,7 +21,7 @@ public class MergeSortUpDown {
 
     public static <T extends Comparable<? super T>> void merge(T[] a, int lo, int mid, int hi) {
         int m = lo, n = mid + 1;
-        for (int i = 0; i < a.length; i++) {
+        for (int i = lo; i <= hi; i++) {
             copy[i] = a[i];
         }
         for (int i = lo; i <= hi; i++) {
