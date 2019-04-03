@@ -22,7 +22,7 @@ public class Main {
             }
         }
         input.close();
-        MergeSortDownUp.mergeSortDownUp(array);
+        QuickSort.sort(array);
         for (T t : array) {
             System.out.print(t + " ");
         }
