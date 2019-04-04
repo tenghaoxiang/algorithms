@@ -2,6 +2,12 @@ package leetcode;
 
 public class Solution43 {
 
+    /**
+     * 这道题我是没有思路的，给定两个数字字符串，算出相乘的结果
+     * 由于长度太长，无法使用int类型直接求解，所以陷入困境，大佬
+     * 充分利用了乘法位置的信息得出结果
+     * num1[i] * num2[j] will be placed at indices [i + j, i + j + 1]
+     */
     public String multiply(String num1, String num2) {
 
         final int length1 = num1.length();
