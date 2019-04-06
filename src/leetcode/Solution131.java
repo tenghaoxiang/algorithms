@@ -24,8 +24,11 @@ public class Solution131 {
 
     public void dfs(String s, int left) {
 
+        /**
+         * 记得加上递归终止的条件，要不会一直递归，发生stackOverFlow异常
+         */
         if (left >= s.length()) {
-            result.add(new ArrayList<>(remain));
+            result.add(new ArrayList<>(remain));//这里新创建一个列表，否则后续的修改会影响已添加的结果
             return;
         }
 
