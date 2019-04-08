@@ -22,7 +22,7 @@ public class Main {
             }
         }
         input.close();
-        QuickSort.sort(array);
+        HeapSort.heapSort(array);
         for (T t : array) {
             System.out.print(t + " ");
         }
