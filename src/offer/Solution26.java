@@ -28,6 +28,9 @@ public class Solution26 {
             Set<Character> set = new HashSet<>();
             for (int i = left; i < chars.length; i++) {
                 if (i == left || !set.contains(chars[i])) {
+                    /**
+                     * 将left后边的元素加入set集合，若有重复的元素，则忽略
+                     */
                     set.add(chars[i]);
                     /**
                      * 将i以及其后边的所有满足条件的字符与left位置的字符交换
