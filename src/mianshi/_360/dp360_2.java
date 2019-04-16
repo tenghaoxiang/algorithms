@@ -1,4 +1,4 @@
-package dynamicPlanning;
+package mianshi._360;
 
 import java.util.Scanner;
 
