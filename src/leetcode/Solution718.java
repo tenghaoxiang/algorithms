@@ -3,12 +3,12 @@ package leetcode;
 public class Solution718 {
     public int findLength(int[] A, int[] B) {
 
+        int max = 0;
         if (A == null || A.length == 0 || B == null || B.length == 0) {
-            return 0;
+            return max;
         }
         int m = A.length;
         int n = B.length;
-        int max = 0;
         int[][] dp = new int[m + 1][n + 1];
         for (int i = 0; i <= m; i++) {
             for (int j = 0; j <= n; j++) {
@@ -23,5 +23,6 @@ public class Solution718 {
             }
         }
         return max;
+
     }
 }
