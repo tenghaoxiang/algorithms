@@ -106,7 +106,7 @@ public class BinaryTree {
             root.right = remove(x, root.right);
         } else {
             if (root.left != null && root.right != null) {
-                root.val = findMin(root);
+                root.val = findMin(root.right);
                 root.right = remove(root.val, root.right);
             } else {
                 root = root.left == null ? root.right : root.left;
