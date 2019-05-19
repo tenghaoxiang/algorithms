@@ -2,19 +2,25 @@ package leetcode;
 
 public class Solution6 {
     public String convert(String s, int nRows) {
-        char[] c = s.toCharArray();
-        int len = c.length;
-        StringBuffer[] sb = new StringBuffer[nRows];
-        for (int i = 0; i < sb.length; i++) sb[i] = new StringBuffer();
-        int i = 0;
-        while (i < len) {
-            for (int idx = 0; idx < nRows && i < len; idx++) // vertically down
-                sb[idx].append(c[i++]);
-            for (int idx = nRows-2; idx >= 1 && i < len; idx--) // obliquely up
-                sb[idx].append(c[i++]);
+        if (s == null) {
+            return null;
         }
-        for (int idx = 1; idx < sb.length; idx++)
-            sb[0].append(sb[idx]);
-        return sb[0].toString();
+        StringBuffer[] stringBuffer = new StringBuffer[nRows];
+        for (int i = 0; i < nRows; i++) {
+            stringBuffer[i] = new StringBuffer();
+        }
+        int i= 0;
+        while (i < s.length()) {
+            for (int idx = 0; idx < nRows && i < s.length(); idx++) {
+                stringBuffer[idx].append(s.charAt(i++));
+            }
+            for (int idx = nRows - 2; idx >= 1 && i < s.length(); idx--) {
+                stringBuffer[idx].append(s.charAt(i++));
+            }
+        }
+        for (int j = 1; j < nRows; j++) {
+            stringBuffer[0].append(stringBuffer[j]);
+        }
+        return stringBuffer[0].toString();
     }
 }
