@@ -35,7 +35,7 @@ public class Solution40 {
         int num = nums[start];
         int left = start;
         int right = end + 1;
-        while (true) {
+         while (true) {
             while (nums[++left] < num) {
                 if (left >= end) {
                     break;
