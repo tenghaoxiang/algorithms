@@ -76,6 +76,7 @@ public class Solution40 {
         }
         for (int i = 0; i < k; i++) {
             res.add(heap.poll());
+
         }
         return res;
 
