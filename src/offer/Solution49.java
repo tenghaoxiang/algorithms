@@ -1,7 +1,13 @@
 package offer;
 
+
 public class Solution49 {
 
+    /**
+     * 用if而不是else if来避免重复值
+     * @param index
+     * @return
+     */
     public int GetUglyNumber_Solution(int index) {
         if (index < 7) {
             return index;
@@ -13,9 +19,11 @@ public class Solution49 {
             res[i] = Math.min(Math.min(res[t2] * 2, res[t3] * 3), res[t5] * 5);
             if (res[i] == res[t2] * 2) {
                 t2++;
-            } else if (res[i] == res[t3] * 3) {
+            }
+            if (res[i] == res[t3] * 3) {
                 t3++;
-            } else {
+            }
+            if(res[i] == res[t5] * 5) {
                 t5++;
             }
         }
