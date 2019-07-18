@@ -1,7 +1,6 @@
 import java.util.HashMap;
-import java.util.Iterator;
 
-public class Test {
+public class HashMapTest {
 
     static volatile  HashMap<Integer,Integer> map = new HashMap<>();
 
