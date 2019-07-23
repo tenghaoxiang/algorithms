@@ -4,7 +4,6 @@ public class HashMapTest {
 
     static volatile  HashMap<Integer,Integer> map = new HashMap<>();
 
-
     public static void main(String[] args) throws InterruptedException {
 
         Thread thread1 = new Thread(() -> {
