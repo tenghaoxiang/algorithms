@@ -39,7 +39,6 @@ public class LCS {
 
     /**
      * 要求连续
-     *
      * @param A
      * @param B
      * @return
