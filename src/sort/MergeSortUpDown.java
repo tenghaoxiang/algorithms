@@ -17,6 +17,7 @@ public class MergeSortUpDown {
         mergeSortUpDown(a, lo, mid);
         mergeSortUpDown(a, mid + 1, hi);
         merge(a, lo, mid, hi);
+
     }
 
     public static <T extends Comparable<? super T>> void merge(T[] a, int lo, int mid, int hi) {
