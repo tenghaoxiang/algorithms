@@ -8,7 +8,7 @@ public class MergeSortUpDown {
         copy = new Comparable[a.length];
         mergeSortUpDown(a, 0, a.length - 1);
     }
-
+///
     public static <T extends Comparable<? super T>> void mergeSortUpDown(T[] a, int lo, int hi) {
         if (hi <= lo) {
             return;
