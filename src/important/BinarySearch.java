@@ -7,6 +7,7 @@ package important;
  */
 public class BinarySearch <T extends Comparable> {
 
+    //复习
     //数组必须是有序的
     public int rank(T num, T[] array) {
 
