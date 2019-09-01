@@ -18,7 +18,7 @@ public class LongIncrSub {
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] < tails[0]) {
                 tails[0] = nums[i];
-            } else if (nums[i] >= tails[len]) {
+            } else if (nums[i] >= tails[len]) { //此处加“=”号，序列是非递减，不加是递增
                 tails[++len] = nums[i];
             } else {
                 tails[binarySearch(tails, 0, len, nums[i])] = nums[i];
