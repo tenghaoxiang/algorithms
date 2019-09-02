@@ -19,7 +19,7 @@ public class HashMapTest {
             }
             System.out.println(map.get(9));
         });
-
+        //顶不住
         thread2.start();
         Thread.sleep(1000);
         thread1.start();
