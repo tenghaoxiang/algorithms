@@ -2,6 +2,7 @@ import java.util.HashMap;
 
 public class HashMapTest {
 
+    //又记住了Hashtable和HashMap的不同，今天刷题了
     static volatile  HashMap<Integer,Integer> map = new HashMap<>();
 
     public static void main(String[] args) throws InterruptedException {
