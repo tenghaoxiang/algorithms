@@ -10,7 +10,7 @@ public class CoinChange {
     public int coinChange(int[] coins, int amount) {
 
         if (amount < 0) {
-            return 0;
+            return -1;
         }
         int[] dp = new int[amount + 1];
         int sum = 0;
